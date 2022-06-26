@@ -6,7 +6,7 @@ import router from './router'
 import store from './store'
 import './style/index.scss'
 import './iconfont/iconfont.css'
-import installTcons from './icons/index.js'
+import installIcons from './icons/index.js'
 const app = createApp(App)
-installTcons(app)
-app.use(ElementPlus).use(store).use(router).mount('#app')
+installIcons(app)
+app.use(store).use(router).use(ElementPlus).mount('#app')
